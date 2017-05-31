@@ -7,27 +7,15 @@ setTimeout(function () {
 
 setTimeout(function () {
 	"use strict";
-	$(".loading").each(function (i) {
+	$(".load").each(function (i) {
 		$(this).delay(500 * i).slideDown();
 	});
 }, 5000);
 
 setTimeout(function () {
 	"use strict";
-	$(".loading").toggle();
-}, 8000);
-
-setTimeout(function () {
-	"use strict";
-	$(".loaded").each(function (i) {
-		$(this).delay(500 * i).slideDown();
-	});
-}, 9000);
-
-setTimeout(function () {
-	"use strict";
 	$(".intro").slideDown();
-}, 10500);
+}, 6500);
 
 $(".minimize").on("click", function () {
 	"use strict";

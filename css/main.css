@@ -132,14 +132,9 @@ li a:hover {
 	min-height: 100vh;
 }
 
-.quote h2:last-child:after {
+.blink {
 	animation: blink 1s infinite;
 	color: #26a69a;
-	content: " █";
-}
-
-.loading:nth-child(even) {
-	color: #5a5a5a;
 }
 
 .photo {
@@ -157,8 +152,7 @@ li a:hover {
 	width: 100%;
 }
 
-.loading,
-.loaded,
+.load,
 .intro,
 .about,
 .portfolio {
