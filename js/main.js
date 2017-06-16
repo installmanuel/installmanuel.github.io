@@ -3,7 +3,7 @@
 setTimeout(function () {
 	"use strict";
 	$(".author").fadeIn();
-}, 4000);
+}, 3500);
 
 setTimeout(function () {
 	"use strict";
@@ -66,7 +66,7 @@ Array.prototype.forEach.call(elements, function (el) {
 	"use strict";
 	var chaffle = new Chaffle(el, {
 		speed: 1,
-		delay: 25
+		delay: 20
 	});
 	chaffle.init();
 });
