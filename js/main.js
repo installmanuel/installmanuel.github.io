@@ -1,21 +1,26 @@
-/*global $*/
+/*global $, Chaffle*/
+
+setTimeout(function () {
+	"use strict";
+	$(".author").fadeIn();
+}, 4000);
 
 setTimeout(function () {
 	"use strict";
 	$(".quote").fadeOut();
-}, 4000);
+}, 6500);
 
 setTimeout(function () {
 	"use strict";
 	$(".load").each(function (i) {
 		$(this).delay(500 * i).slideDown();
 	});
-}, 5000);
+}, 7500);
 
 setTimeout(function () {
 	"use strict";
 	$(".intro").slideDown();
-}, 6500);
+}, 9000);
 
 $(".minimize").on("click", function () {
 	"use strict";
@@ -54,4 +59,14 @@ $("a[href='.portfolio']").on("click", function (event) {
 	event.preventDefault();
 	$(".intro, .about").hide();
 	$(".portfolio").slideToggle();
+});
+
+var elements = document.querySelectorAll("[data-chaffle]");
+Array.prototype.forEach.call(elements, function (el) {
+	"use strict";
+	var chaffle = new Chaffle(el, {
+		speed: 1,
+		delay: 25
+	});
+	chaffle.init();
 });
